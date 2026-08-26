@@ -5,5 +5,4 @@ class MemberService:
     def register_new_member(self,member):
         self.members_list.append(member)
 
-    def get_member_list(self):
-        return self.members_list
+    
