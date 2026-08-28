@@ -1,6 +1,6 @@
 from src.anmalningar.event import Event
 import pytest
-@pytest.fixture
+
+@pytest.fixture # En fixture som härmar Event klassen.
 def test_event():
-    e = Event("Promenad")
-    return e
+    return Event()
