@@ -20,7 +20,7 @@ def test_deposit_to_account(mocker):
     account.deposit(500)
 
     assert account.balance == 500
-    spy.assert_called_once_with("deposit 500 kr, saldo 500 kr")
+    spy.assert_called_once_with(f"deposit {500} kr, saldo {account.balance} kr")
 
 
 @pytest.mark.integration
